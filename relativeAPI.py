@@ -92,6 +92,7 @@ def get_books(book_source):
             b.release_date AS "releaseDate",
             b.price,
             b.average_rating AS "averageRating",
+            b.number_of_ratings AS "numberOfRatings",
             b.source_id,
             json_agg(
                 json_build_object(
